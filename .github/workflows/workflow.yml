@@ -19,7 +19,7 @@ jobs:
           distribution: microsoft
           cache: maven
       - name: Maven Build
-        run: mvn -B -DskipTests package
+        run: ./mvnw clean install
       - name: Coverity Scan
         uses: synopsys-sig/synopsys-action@v1.13.0
         with:
