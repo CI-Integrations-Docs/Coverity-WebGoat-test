@@ -4,7 +4,7 @@ on:
   
 jobs:
   build:
-    runs-on: clarence
+    runs-on: Clarence
     steps:
       - name: Checkout Source
         uses: actions/checkout@v3
